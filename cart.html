@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="styles/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bolder" href="index.html">E-Commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Food</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                                <li><a class="dropdown-item" href="#">School Appliances</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex w-75 justify-content-center">
+                        <input class="form-control rounded-0 rounded-start w-75" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-success rounded-0 rounded-end" type="submit"><i
+                                class="fa fa-search"></i></button>
+                    </form>
+                    <a href="cart.html"><button class="btn btn-warning me-2"><i
+                                class="fa fa-cart-plus"></i></button></a>
+                    <a href="profile.html"><button class="btn btn-info ms-2"><i class="fa fa-user"></i></button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main" id="main">
+        <h1 class="bg-warning text-center py-5 fw-bolder">Cart</h1>
+        <div class="cart d-flex p-5">
+            <div class="address w-50 me-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="address" class="fw-bold">Contact Details:</label>
+                        <input type="name" class="form-control mb-2" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Full Name">
+                        <input type="email" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Id">
+                        <input type="number" class="form-control" id="exampleInputphone1" aria-describedby="phoneHelp"
+                        placeholder="Contact Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="fw-bold">Delivery Address:</label>
+                        <input type="text" class="form-control mb-2" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="Address line 1">
+                        <input type="text" class="form-control mb-2" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="Address line 2">
+                        <input type="text" class="form-control mb-2" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="Street">
+                        <input type="text" class="form-control mb-2" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="City">
+                        <input type="text" class="form-control mb-2" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="State">
+                        <input type="text" class="form-control mb-2" id="exampleInputAddress" aria-describedby="addressHelp" placeholder="Zip Code/ Pin Code">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Save My Information</label>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Submit</button>
+                </form>
+            </div>
+            <div class="items w-50">
+                <div class="accordion mb-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Shopped Items
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="item-single d-flex justify-content-between align-items-center">
+                                    <img src="img/calc.jpg" alt="" height="50" class="">
+                                    <div>Scientific Calculator</div>
+                                    <div class="price">₹ 799</div>
+                                    <div class="buttons">
+                                        <button class="btn btn-sm btn-danger"><i class="fa fa-minus"></i></button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item-single d-flex justify-content-between align-items-center ">
+                                    <img src="img/velcro.jpg" alt="" height="50">
+                                    <div>Velcro Stripe</div>
+                                    <div class="price">₹ 149</div>
+                                    <div class="buttons">
+                                        <button class="btn btn-sm btn-danger"><i class="fa fa-minus"></i></button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item-single d-flex justify-content-between align-items-center">
+                                    <img src="img/shirts.jpg" alt="" height="50">
+                                    <div>Shirts Combo</div>
+                                    <div class="price">₹ 499</div>
+                                    <div class="buttons">
+                                        <button class="btn btn-sm btn-danger"><i class="fa fa-minus"></i></button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Payment Gateway
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        UPI
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Debit Card
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Cash on delivery
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Confirm Order</button>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <div>Copyright &copy; 2021 <strong>Company Name</strong>. All Rights Reserved</div>
+    </footer>
+    <!-- Additional JS -->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+</body>
+
+</html>

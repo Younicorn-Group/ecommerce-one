@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="styles/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bolder" href="index.html">E-Commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Food</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                                <li><a class="dropdown-item" href="#">School Appliances</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex w-75 justify-content-center">
+                        <input class="form-control rounded-0 rounded-start w-75" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-success rounded-0 rounded-end" type="submit"><i
+                                class="fa fa-search"></i></button>
+                    </form>
+                    <a href="cart.html"><button class="btn btn-warning me-2"><i class="fa fa-cart-plus"></i></button></a>
+                    <a href="profile.html"><button class="btn btn-info ms-2"><i class="fa fa-user"></i></button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main" id="main" style="height: 100vh;">
+        <div class="container d-flex justify-content-center" style="padding: 60px;">
+            <img src="img/calc.jpg" alt="" class="pe-5" height="500px">
+            <div class="product-details w-50">
+                <h1>Scientific Calculator</h1>
+                <h4 class="text-danger">₹ 799 <strike style="font-size: 14px" class="text-secondary ps-2">₹ 999</strike>
+                </h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae, provident non illum repellendus,libero ab, corrupti alias rem quo soluta. Quaerat deserunt repellat inventore voluptas quibusdam cumque reiciendis est voluptatibus aliquam nostrum? Alias excepturi laudantium molestiae. Culpa rerum natus excepturi, distinctio blanditiis esse deserunt reiciendis ab autem, saepe consequuntur repellendus ipsum quidem sint modi qui. Porro veritatis ducimus tempora ratione.</p>
+                <hr>
+                <div class="accordion accordion-flush my-3" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Specifications
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="specs pb-0">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Parameter</th>
+                                                <th scope="col">Specifications</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Material</td>
+                                                <td>Plastic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power</td>
+                                                <td>Battery</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Type</td>
+                                                <td>Scientific</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brand</td>
+                                                <td>Casio</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Weight</td>
+                                                <td>135g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Net Quantity</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Bank Offer
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Student Offer
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons d-flex">
+                    <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                    <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center">
+            <div>Copyright &copy; 2021 <strong>Company Name</strong>. All Rights Reserved</div>
+        </footer>
+    </section>
+    <!-- Additional JS -->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+</body>
+
+</html>

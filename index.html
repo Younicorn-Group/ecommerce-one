@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="styles/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="styles/all.min.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bolder" href="index.html">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Catalog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Food</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                <li><a class="dropdown-item" href="#">School Appliances</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex w-75 justify-content-center">
+            <input class="form-control rounded-0 rounded-start w-50 border-0 bg-light" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn-success rounded-0 rounded-end" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <a href="cart.html"><button class="btn btn-warning me-2"><i class="fa fa-cart-plus"></i></button></a>
+          <a href="profile.html"><button class="btn btn-info ms-2"><i class="fa fa-user"></i></button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero p-5 d-flex justify-content-evenly align-items-center bg-light text-dark">
+    <div class="left w-50">
+      <h3>This is your</h3>
+      <h1>E-Commerce Platform</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ducimus at voluptatum unde maxime beatae
+        natus maiores quis perspiciatis, temporibus dolor repudiandae eos deleniti! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Harum placeat doloribus dolore, aliquid magni quibusdam. Et rerum, asperiores
+        natus quaerat, a molestias accusantium cupiditate odio, voluptate provident adipisci? Illum unde ipsa incidunt
+        dolorum cupiditate?</p>
+    </div>
+    <div class="right">
+      <img src="img/airpods-max.png" alt="" width="250">
+    </div>
+  </section>
+  <section class="main" id="main">
+    <div class=" main-content d-flex">
+      <div class="side w-50 pe-5 h-100">
+        <div class="delivery m-3">
+          <div class="delivery-list">
+            <h4 class="fw-bolder">Delivery</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Normal Delivery
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                Fast Delivery
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter m-3">
+          <div class="filter-list">
+            <h4 class="fw-bolder">Categories</h4>
+            <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"><label
+                class="form-check-label" for="defaultCheck1">Technology</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"><label
+                class="form-check-label" for="defaultCheck1">Footwear</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"><label
+                class="form-check-label" for="defaultCheck1">Clothing</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"><label
+                class="form-check-label" for="defaultCheck1">Wearables</label></div>
+          </div>
+        </div>
+
+        <div class="discounts m-3">
+          <div class="discount-list">
+            <h4 class="fw-bolder">Discounts</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                10% Discount
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault4">
+              <label class="form-check-label" for="flexRadioDefault4">
+                30% Discount
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault5">
+              <label class="form-check-label" for="flexRadioDefault5">
+                50% Discount
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6">
+              <label class="form-check-label" for="flexRadioDefault6">
+                70% Discount
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="price m-3">
+          <h4 class="fw-bolder">Price Range</h4>
+          <div class="slidecontainer w-100">
+            <div class="d-flex justify-content-between">
+              <h6>0</h6>
+              <h6>₹10,000</h6>
+            </div>
+            <input type="range" min="1" max="100" value="10" class="slider w-100 rounded-pill" id="myRange"
+              style="-webkit-appearance: none;">
+          </div>
+        </div>
+      </div>
+
+      <div class="shoping">
+        <div class="">
+          <div class="single-container d-flex align-items-center pb-5">
+            <img src="img/calc.jpg" class="card-img-top me-5" alt="..." height="200">
+            <div class="content">
+              <a href="product.html" class="fw-bolder text-decoration-none text-dark" style="font-size: 20px;">
+                <h2>Scientific Calculator</h2>
+                <h4 class="text-danger">₹ 799 <strike style="font-size: 14px" class="text-secondary ps-2">₹ 999</strike>
+                </h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet neque sequi ipsa, molestias quos
+                deserunt blanditiis exercitationem illum non voluptatem libero alias quibusdam. Alias exercitationem
+                quae corrupti placeat ex laudantium! Quaerat, voluptas. Amet.</p>
+              <div class="buttons d-flex">
+                <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="single-container d-flex align-items-center pb-5">
+            <img src="img/shirts.jpg" class="card-img-top me-5" alt="..." height="200">
+            <div class="content">
+              <a href="product.html" class="fw-bolder text-decoration-none text-dark" style="font-size: 20px;">
+                <h2>Shirts Combo</h2>
+                <h4 class="text-danger">₹ 499 <strike style="font-size: 14px" class="text-secondary ps-2">₹ 699</strike>
+                </h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet neque sequi ipsa, molestias quos
+                deserunt blanditiis exercitationem illum non voluptatem libero alias quibusdam. Alias exercitationem
+                quae corrupti placeat ex laudantium! Quaerat, voluptas. Amet.</p>
+              <div class="buttons d-flex">
+                <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="single-container d-flex align-items-center pb-5">
+            <img src="img/shoe.jpg" class="card-img-top me-5" alt="..." height="200">
+            <div class="content">
+              <a href="product.html" class="fw-bolder text-decoration-none text-dark" style="font-size: 20px;">
+                <h2>Sports Shoes</h2>
+                <h4 class="text-danger">₹ 1199 <strike style="font-size: 14px" class="text-secondary ps-2">₹
+                    1499</strike></h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet neque sequi ipsa, molestias quos
+                deserunt blanditiis exercitationem illum non voluptatem libero alias quibusdam. Alias exercitationem
+                quae corrupti placeat ex laudantium! Quaerat, voluptas. Amet.</p>
+              <div class="buttons d-flex">
+                <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="single-container d-flex align-items-center pb-5">
+            <img src="img/straps.jpg" class="card-img-top me-5" alt="..." height="200">
+            <div class="content">
+              <a href="product.html" class="fw-bolder text-decoration-none text-dark" style="font-size: 20px;">
+                <h2>Knee Straps</h2>
+                <h4 class="text-danger">₹ 299 <strike style="font-size: 14px" class="text-secondary ps-2">₹ 599</strike>
+                </h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet neque sequi ipsa, molestias quos
+                deserunt blanditiis exercitationem illum non voluptatem libero alias quibusdam. Alias exercitationem
+                quae corrupti placeat ex laudantium! Quaerat, voluptas. Amet.</p>
+              <div class="buttons d-flex">
+                <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="single-container d-flex align-items-center pb-5">
+            <img src="img/velcro.jpg" class="card-img-top me-5" alt="..." height="200">
+            <div class="content">
+              <a href="product.html" class="fw-bolder text-decoration-none text-dark" style="font-size: 20px;">
+                <h2>Velcro Strip</h2>
+                <h4 class="text-danger">₹ 149 <strike style="font-size: 14px" class="text-secondary ps-2">₹ 299</strike>
+                </h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet neque sequi ipsa, molestias quos
+                deserunt blanditiis exercitationem illum non voluptatem libero alias quibusdam. Alias exercitationem
+                quae corrupti placeat ex laudantium! Quaerat, voluptas. Amet.</p>
+              <div class="buttons d-flex">
+                <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="single-container d-flex align-items-center pb-5">
+            <img src="img/watch.jpg" class="card-img-top me-5" alt="..." height="200">
+            <div class="content">
+              <a href="product.html" class="fw-bolder text-decoration-none text-dark" style="font-size: 20px;">
+                <h2>Smart Watch</h2>
+                <h4 class="text-danger">₹ 5999 <strike style="font-size: 14px" class="text-secondary ps-2">₹
+                    9999</strike></h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet neque sequi ipsa, molestias quos
+                deserunt blanditiis exercitationem illum non voluptatem libero alias quibusdam. Alias exercitationem
+                quae corrupti placeat ex laudantium! Quaerat, voluptas. Amet.</p>
+              <div class="buttons d-flex">
+                <button class="btn btn-sm btn-warning w-25 me-2"><i class="fa fa-cart-plus"></i></button>
+                <button class="btn btn-sm btn-danger w-25 ms-2"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div>Copyright &copy; 2021 <strong>Company Name</strong>. All Rights Reserved</div>
+    </footer>
+  </section>
+  <!-- Additional JS -->
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/all.min.js"></script>
+</body>
+
+</html>

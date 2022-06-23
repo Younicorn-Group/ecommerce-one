@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="styles/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bolder" href="index.html">E-Commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Food</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                                <li><a class="dropdown-item" href="#">School Appliances</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex w-75 justify-content-center">
+                        <input class="form-control rounded-0 rounded-start w-75" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-success rounded-0 rounded-end" type="submit"><i
+                                class="fa fa-search"></i></button>
+                    </form>
+                    <a href="cart.html"><button class="btn btn-warning me-2"><i class="fa fa-cart-plus"></i></button></a>
+                    <a href="profile.html"><button class="btn btn-info ms-2"><i class="fa fa-user"></i></button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main" id="main">
+        <div class="main-content m-auto" style="padding: 90px 360px;">
+            <div class="text fa-3x fw-bolder text-center">Welcome To E-Commerce</div>
+            <div class="text fw-bold text-center mb-5" style="font-size: 24px;">Create Account</div>
+            <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control border-0 mb-3" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Full Name" style="background-color: rgba(255, 255, 255, 0.5);">
+                  <input type="number" class="form-control border-0 mb-3" id="exampleInputPhone1" aria-describedby="phoneHelp" placeholder="Contact Number" style="background-color: rgba(255, 255, 255, 0.5);">
+                  <input type="email" class="form-control border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Id" style="background-color: rgba(255, 255, 255, 0.5);">
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control border-0 mb-3" id="exampleInputPassword1" placeholder="Set Password" style="background-color: rgba(255, 255, 255, 0.5);">
+                  <input type="password" class="form-control border-0" id="exampleInputPassword1" placeholder="Repeat Password" style="background-color: rgba(255, 255, 255, 0.5);">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Accept Terms & Conditions</label>
+                </div>
+                <a href="profile.html" class="text-white text-decoration-none"><div type="submit" class="btn btn-success w-100 mb-3">Login</div></a>
+                <a href="signup.html" class="text-white text-decoration-none"><div type="submit" class="btn btn-primary w-100">Sign Up</div></a>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center">
+        <div>Copyright &copy; 2021 <strong>Company Name</strong>. All Rights Reserved</div>
+    </footer>
+    <!-- Additional JS -->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+</body>
+
+</html>
